@@ -78,6 +78,7 @@ Both tools function near identically once open but running the software is diffe
 {{3}}
 > **Sign in with your MathWorks account.**
 >
+> - Please make sure to use your Warwick email address to log in.
 > - Or using the provided account details.
 
 
