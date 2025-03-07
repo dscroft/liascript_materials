@@ -39,13 +39,15 @@ Both tools function near identically once open but running the software is diffe
 {{1}}
 > **Select the appropriate option below.**
 
-<details>
-<summary>**Installed MATLAB**</summary>
 
 {{2}}
 > **Download the calibration images from [here](dataset.zip).**
 >
 > - Unzip (extract) the contents to a location you can easily find, you will need them later.
+
+
+<details>
+<summary>**Installed MATLAB**</summary>
 
 {{3}} 
 > **Using the provided laptop open MATLAB.**
