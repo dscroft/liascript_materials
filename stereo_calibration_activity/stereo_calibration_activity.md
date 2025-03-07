@@ -259,6 +259,11 @@ You should now be on the calibration screen with the images loaded.
 >
 >   - `Calibration Progress`
 
+{{3}}
+> **Click `Export Camera Parameters`.**
+>
+> - Use the default name `stereoParams` and click `Save`.
+
 ## Results
 
 {{1}}
