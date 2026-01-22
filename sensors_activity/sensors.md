@@ -311,6 +311,8 @@ Create a new script and copy the following code.
 When ready, run the script.
 
 - A single reading from each sensor will be taken and output.
+  - If you get an error when trying to run the `irSensor` function, see solution at the end of this page.
+
 
 ``` matlab
 % test if ev variable already exists, if not, create it
@@ -338,6 +340,30 @@ sonar = sonicSensor( ev, 4 );
 fprintf( "Sonar: %f\n", readDistance( sonar ) );
 ```
 
+--------------------------------------
+
+`irSensor` function fix.
+========================
+
+There is a known issue if you have both the EV3 support package at the Sensor Fusion and tracking package installed. 
+
+There are two solutions, either:
+
+1. Uninstall the Sensor Fusion and tracking package.
+
+    - Go to MATLAB Home tab -> Add-Ons -> Manage Add-Ons.
+    - Find the Sensor Fusion and tracking package and uninstall it.
+    - Restart MATLAB.
+
+2. Temporarily remove it from the MATLAB path.
+
+    - Run the following code in the command window, or add it to the start of your script.
+
+``` matlab
+sensorFusionPath = fullfile(matlabroot, 'toolbox', 'fusion');
+rmpath(genpath(sensorFusionPath));
+rehash toolboxcache
+```
 
 
 ### Example 2 - Move motors
